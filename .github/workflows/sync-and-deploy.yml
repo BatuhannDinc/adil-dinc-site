@@ -8,10 +8,8 @@ on:
   push:
     branches: [main]
 
-permissions:
-  contents: write
-  pages: write
-  id-token: write
+# Least privilege: each job gets only what it needs (see the per-job permissions blocks).
+permissions: {}
 
 concurrency:
   group: sync-and-deploy
@@ -20,6 +18,14 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    permissions:
+      # Push the regenerated data/pages back to the repository.
+      contents: write
+      # configure-pages only reads the Pages site config (base_url) via the API.
+      pages: read
+    outputs:
+      fetch_outcome: ${{ steps.fetch.outcome }}
+      images_outcome: ${{ steps.images.outcome }}
     steps:
       - uses: actions/checkout@v4
 
@@ -27,35 +33,117 @@ jobs:
         with:
           python-version: "3.12"
 
+      - id: pages
+        uses: actions/configure-pages@v5
+
+      # A RE/MAX outage must not block deploys: the build falls back to the last committed
+      # data.js and cache, and report-sync-failure turns the run red afterwards.
       - name: Pull listings from RE/MAX profile
+        id: fetch
+        continue-on-error: true
         run: python3 -I scripts/sync_listings.py
 
-      - name: Commit data.js if listings changed
+      # Mirrored photos are not committed (media/ is gitignored); the cache carries them across
+      # runs so only new listings' photos are downloaded. The key changes with the detail cache and
+      # the prefix restore-key reuses the latest older copy.
+      - name: Restore mirrored listing photos
+        uses: actions/cache@v4
+        with:
+          path: media
+          key: listing-media-${{ hashFiles('scripts/cache/listing_details.json') }}
+          restore-keys: |
+            listing-media-
+
+      # RE/MAX's image CDN can hang on uncached variants; pages fall back to hotlinks for
+      # anything missing, so a partial mirror must not block the deploy.
+      - name: Mirror listing photos
+        id: images
+        continue-on-error: true
+        run: python3 -I scripts/fetch_images.py
+
+      - name: Build static pages
+        env:
+          PAGES_BASE_URL: ${{ steps.pages.outputs.base_url }}
         run: |
+          # base_url has no trailing slash for user sites but may for custom setups; normalise to exactly one.
+          SITE_BASE_URL="${PAGES_BASE_URL%/}/"
+          export SITE_BASE_URL
+          python3 -I scripts/build_site.py
+
+      - name: Commit generated files if listings changed
+        run: |
+          generated_paths=()
+          for path in data.js scripts/cache ilan sitemap.xml robots.txt 404.html; do
+            if [ -e "$path" ]; then
+              generated_paths+=("$path")
+            fi
+          done
+          git add -A -- "${generated_paths[@]}"
           # syncedAt changes on every run, so compare without it to avoid a commit every 3 hours.
-          if git diff --quiet -I '"syncedAt"' -- data.js; then
+          if git diff --cached --quiet -I '"syncedAt"'; then
             echo "No listing changes"
+            git reset -q
             git checkout -- data.js
           else
             git config user.name "listing-sync-bot"
             git config user.email "listing-sync-bot@users.noreply.github.com"
-            git add data.js
             git commit -m "Sync listings from RE/MAX"
+            # A push to main can land while this run syncs; replay our commit on top instead of failing.
+            git pull --rebase --autostash
             git push
           fi
 
-      - uses: actions/configure-pages@v5
+      # Publish only the public site; uploading the repo root would expose scripts/ and workflow files.
+      - name: Assemble publish directory
+        run: |
+          if [ ! -f index.html ]; then
+            echo "index.html is missing; refusing to publish an empty site" >&2
+            exit 1
+          fi
+          rm -rf _site
+          mkdir _site
+          for path in index.html data.js assets media ilan kvkk sitemap.xml robots.txt 404.html; do
+            if [ -e "$path" ]; then
+              cp -R "$path" _site/
+            else
+              echo "Skipping missing $path"
+            fi
+          done
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
   deploy:
     needs: sync
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  report-sync-failure:
+    needs: [sync, deploy]
+    if: >-
+      always() && (needs.sync.outputs.fetch_outcome == 'failure'
+      || needs.sync.outputs.images_outcome == 'failure')
+    runs-on: ubuntu-latest
+    permissions: {}
+    steps:
+      - name: Fail run so the owner is notified
+        env:
+          FETCH_OUTCOME: ${{ needs.sync.outputs.fetch_outcome }}
+          IMAGES_OUTCOME: ${{ needs.sync.outputs.images_outcome }}
+        run: |
+          if [ "$FETCH_OUTCOME" = "failure" ]; then
+            echo "::error::RE/MAX sync failed; site deployed with last committed data"
+          fi
+          if [ "$IMAGES_OUTCOME" = "failure" ]; then
+            echo "::error::Fewer than half of the listing photos could be mirrored; pages fall back to RE/MAX hotlinks"
+          fi
+          exit 1

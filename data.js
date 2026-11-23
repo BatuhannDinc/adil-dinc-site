@@ -1,5 +1,5 @@
 window.SITE_DATA = {
- "syncedAt": "2026-11-23T15:17:24+00:00",
+ "syncedAt": "2026-11-23T17:32:53+00:00",
  "sourceUrl": "https://remax.com.tr/tr/danisman/15913-952/adil-dinc",
  "agent": {
   "name": "Adil Dinç",
@@ -27,7 +27,7 @@ window.SITE_DATA = {
   ],
   "reviewCount": 36,
   "reviewAverage": 5,
-  "bio": "GAYRİMENKULDE ADİL ÇÖZÜM\n\nGAYRİMENKULDE ADİL ÇÖZÜM\n\n  Adil DİNÇ kimdir ? \n 1962 yılında Konya\"da doğdum.İlköğretim, orta öğretim ve liseyi Konya\"da okudum.1981 yılında katıldığım Türk Silahlı Kuvvetleri\"de Türkiye\"nin birçok bölgesinde idari amirlik ve öğretmenlik yaptıktan sonra şeref ve onur duyduğum mesleğimden 2007 yılında kendi isteğimle emekli oldum.2008 yılında kendi şirketim olan Ader Endüstriyel\"i kurarak İstanbul\"da birçok projeye imza attım.2011 yılında şirketimi kapatarak 2011-2015 yılları arasında Tarım Kredi Kooperatifleri Tarnet A.Ş.de Proje Sorumlusu olarak çalıştım. Tarnet A.Ş.\"den ayrıldıktan yaklaşık 6 ay sonra gayrimenkul sektörü öncülerinden RE/MAX ailesine katıldım.Sistem içerisinde ve ofis bazında mesleğimi geliştirmeye yönelik eğitimlere katılma fırsatı yakaladım.Şu an ise çalıştığım RE/MAX sisteminde bilgi birikimi ve tecrübemi en doğru şekilde sizlere sunma gayreti içerisindeyim.\n\nMİSYONUM: Müşteri memnuniyeti ve istikrar.\n\nVİZYONUM: Dürüst ve başarılı olmak.\r\n\n            ALDIĞIM EĞİTİMLER\r\n\n- 2016 RE/MAX Kariyeriniz Eğitimi Barış KILIÇARSLAN\r\n- 2016 Dijital Pazarlama Eğitimi Evren TOPAL\r\n- 2016 Power Up  Gökçe Ilgaz ŞARK\r\n- 2017 Değişen Piyasa Koşullarında Çalışmak-Mega Course Angelo FRADERA\r\n- 2017 Emlak Danışmanlığı Kursu Milli Eğitim Bakanlığı\r\n- 2017 Satış Küpü -Marketing Solutions Kürşat TUNCEL\r\n- 2017 Gayrimenkul Danışmanlığında Altın Anahtarınız  Kadir YILDIRIM\r\n- 2017 Pazarlamada İnovasyon Eğitimi ve Atölyesi Ankara Ato Akedemi \r\n- 2018 Gayrimenkul Mevzuatı Eğitimi Nuri İĞMEN        \r\n- 2018 Ticari gayrimenkul Eğitimi İzmir Ticaret odası Halil BAKİ \r\n- 2018 Gayrimenkulde satış kapama İzmir Ticaret odası Yusuf Murat GENÇ\r\n- 2019 Dijital Pazarlama Eğitimi (İzto) Murat YILMAZ.\r\n- 2019 Arsa ve Arazi Temel Eğitimi (izto) Coşkun EREN.\r\n- 2019 Müzakere Eğitimi Onur BUZAĞICIOĞLU",
+  "bio": "GAYRİMENKULDE ADİL ÇÖZÜM\n\nAdil DİNÇ kimdir ? \n 1962 yılında Konya’da doğdum.İlköğretim, orta öğretim ve liseyi Konya’da okudum.1981 yılında katıldığım Türk Silahlı Kuvvetleri’de Türkiye’nin birçok bölgesinde idari amirlik ve öğretmenlik yaptıktan sonra şeref ve onur duyduğum mesleğimden 2007 yılında kendi isteğimle emekli oldum.2008 yılında kendi şirketim olan Ader Endüstriyel’i kurarak İstanbul’da birçok projeye imza attım.2011 yılında şirketimi kapatarak 2011-2015 yılları arasında Tarım Kredi Kooperatifleri Tarnet A.Ş.de Proje Sorumlusu olarak çalıştım. Tarnet A.Ş.\"den ayrıldıktan yaklaşık 6 ay sonra gayrimenkul sektörü öncülerinden RE/MAX ailesine katıldım.Sistem içerisinde ve ofis bazında mesleğimi geliştirmeye yönelik eğitimlere katılma fırsatı yakaladım.Şu an ise çalıştığım RE/MAX sisteminde bilgi birikimi ve tecrübemi en doğru şekilde sizlere sunma gayreti içerisindeyim.\n\nMİSYONUM: Müşteri memnuniyeti ve istikrar.\n\nVİZYONUM: Dürüst ve başarılı olmak.\n\nALDIĞIM EĞİTİMLER\n\n- 2016 RE/MAX Kariyeriniz Eğitimi Barış KILIÇARSLAN\n- 2016 Dijital Pazarlama Eğitimi Evren TOPAL\n- 2016 Power Up  Gökçe Ilgaz ŞARK\n- 2017 Değişen Piyasa Koşullarında Çalışmak-Mega Course Angelo FRADERA\n- 2017 Emlak Danışmanlığı Kursu Milli Eğitim Bakanlığı\n- 2017 Satış Küpü -Marketing Solutions Kürşat TUNCEL\n- 2017 Gayrimenkul Danışmanlığında Altın Anahtarınız  Kadir YILDIRIM\n- 2017 Pazarlamada İnovasyon Eğitimi ve Atölyesi Ankara Ato Akedemi \n- 2018 Gayrimenkul Mevzuatı Eğitimi Nuri İĞMEN        \n- 2018 Ticari gayrimenkul Eğitimi İzmir Ticaret odası Halil BAKİ \n- 2018 Gayrimenkulde satış kapama İzmir Ticaret odası Yusuf Murat GENÇ\n- 2019 Dijital Pazarlama Eğitimi (İzto) Murat YILMAZ.\n- 2019 Arsa ve Arazi Temel Eğitimi (izto) Coşkun EREN.\n- 2019 Müzakere Eğitimi Onur BUZAĞICIOĞLU",
   "officeAddress": "Caher Dudayev Bulvarı, Condominium No 9/2a, Ataşehir Mah., Çiğli/İzmir",
   "officeLat": 38.4776046147723,
   "officeLng": 27.0675686527786
@@ -48,7 +48,12 @@ window.SITE_DATA = {
    "category": "Daire",
    "image": "https://i.remax.com.tr/photos/20/1511320/L/00a001434f554c89883205b1d7cbdf9a.webp",
    "photoCount": 44,
-   "url": "https://remax.com.tr/tr/portfoy/P27086060"
+   "url": "https://remax.com.tr/tr/portfoy/P27086060",
+   "displayTitle": "Hatay Metro & Hastanelere Yürüme Mesafesinde Satılık 2+1 Daire",
+   "imageSmall": "media/P27086060/00a001434f554c89883205b1d7cbdf9a-s.webp",
+   "imageMedium": "media/P27086060/00a001434f554c89883205b1d7cbdf9a-m.webp",
+   "pageUrl": "ilan/P27086060/",
+   "typeGroup": "Konut"
   },
   {
    "code": "P52332573",
@@ -65,7 +70,12 @@ window.SITE_DATA = {
    "category": "Fabrika & Üretim Tesisi",
    "image": "https://i.remax.com.tr/photos/75/1501575/L/6ff1482c721344ee8a9adb76639b9cb0.webp",
    "photoCount": 43,
-   "url": "https://remax.com.tr/tr/portfoy/P52332573"
+   "url": "https://remax.com.tr/tr/portfoy/P52332573",
+   "displayTitle": "Akhisar OSB'de Yatırımlık Satılık Fabrika – 10.000 m² Arsa – 630 kVA Enerji",
+   "imageSmall": "media/P52332573/6ff1482c721344ee8a9adb76639b9cb0-s.webp",
+   "imageMedium": "media/P52332573/6ff1482c721344ee8a9adb76639b9cb0-m.webp",
+   "pageUrl": "ilan/P52332573/",
+   "typeGroup": "Sanayi"
   },
   {
    "code": "P40216114",
@@ -82,7 +92,12 @@ window.SITE_DATA = {
    "category": "Konut İmarlı",
    "image": "https://i.remax.com.tr/photos/46/1497546/L/5814f212f0224668a75b9b1ad90058be.webp",
    "photoCount": 47,
-   "url": "https://remax.com.tr/tr/portfoy/P40216114"
+   "url": "https://remax.com.tr/tr/portfoy/P40216114",
+   "displayTitle": "Aliağa Bozköy'de 20.250m² Liman Ve Otobana Yakın İmar Potansiyelli Arsa",
+   "imageSmall": "media/P40216114/5814f212f0224668a75b9b1ad90058be-s.webp",
+   "imageMedium": "media/P40216114/5814f212f0224668a75b9b1ad90058be-m.webp",
+   "pageUrl": "ilan/P40216114/",
+   "typeGroup": "Arsa"
   },
   {
    "code": "P05877568",
@@ -99,7 +114,12 @@ window.SITE_DATA = {
    "category": "Çiftlik",
    "image": "https://i.remax.com.tr/photos/80/1496180/L/d2ff1c1b4c9348b6b05684c0fafd85d9.webp",
    "photoCount": 18,
-   "url": "https://remax.com.tr/tr/portfoy/P05877568"
+   "url": "https://remax.com.tr/tr/portfoy/P05877568",
+   "displayTitle": "Akhisar Rahmiye’de 49.452 m² Arsa Üzerinde 5.392 m² Kapalı Alanlı Ruhsatlı Satılık Tavuk Çiftliği",
+   "imageSmall": "media/P05877568/d2ff1c1b4c9348b6b05684c0fafd85d9-s.webp",
+   "imageMedium": "media/P05877568/d2ff1c1b4c9348b6b05684c0fafd85d9-m.webp",
+   "pageUrl": "ilan/P05877568/",
+   "typeGroup": "Çiftlik"
   },
   {
    "code": "P66886000",
@@ -116,7 +136,12 @@ window.SITE_DATA = {
    "category": "Villa",
    "image": "https://i.remax.com.tr/photos/78/1490378/L/f1946c7de22648109ecb4317bb01ac03.webp",
    "photoCount": 40,
-   "url": "https://remax.com.tr/tr/portfoy/P66886000"
+   "url": "https://remax.com.tr/tr/portfoy/P66886000",
+   "displayTitle": "Forum Bornova Karşında Net Kullanım Alanı 774m² 4 Katlı Satılık İkiz Villa (Fourleks)",
+   "imageSmall": "media/P66886000/f1946c7de22648109ecb4317bb01ac03-s.webp",
+   "imageMedium": "media/P66886000/f1946c7de22648109ecb4317bb01ac03-m.webp",
+   "pageUrl": "ilan/P66886000/",
+   "typeGroup": "Konut"
   },
   {
    "code": "P05464584",
@@ -133,7 +158,12 @@ window.SITE_DATA = {
    "category": "Fabrika & Üretim Tesisi",
    "image": "https://i.remax.com.tr/photos/71/1478371/L/719b884254a1442dbc5422d600d94b4c.webp",
    "photoCount": 37,
-   "url": "https://remax.com.tr/tr/portfoy/P05464584"
+   "url": "https://remax.com.tr/tr/portfoy/P05464584",
+   "displayTitle": "Akhisar OSB'de 44.000 m² Arsa 17.000 m² Kapalı Alanlı Satılık Fabrika",
+   "imageSmall": "media/P05464584/719b884254a1442dbc5422d600d94b4c-s.webp",
+   "imageMedium": "media/P05464584/719b884254a1442dbc5422d600d94b4c-m.webp",
+   "pageUrl": "ilan/P05464584/",
+   "typeGroup": "Sanayi"
   },
   {
    "code": "P52833031",
@@ -150,7 +180,12 @@ window.SITE_DATA = {
    "category": "Fabrika & Üretim Tesisi",
    "image": "https://i.remax.com.tr/photos/52/1478352/L/541629516e544c68af63b9779389be5a.webp",
    "photoCount": 44,
-   "url": "https://remax.com.tr/tr/portfoy/P52833031"
+   "url": "https://remax.com.tr/tr/portfoy/P52833031",
+   "displayTitle": "Akhisar OSB’de 76.000 m² Arsa Üzerinde 19.000 m² Kapalı Satılık Fabrika",
+   "imageSmall": "media/P52833031/541629516e544c68af63b9779389be5a-s.webp",
+   "imageMedium": "media/P52833031/541629516e544c68af63b9779389be5a-m.webp",
+   "pageUrl": "ilan/P52833031/",
+   "typeGroup": "Sanayi"
   },
   {
    "code": "P70778343",
@@ -167,7 +202,12 @@ window.SITE_DATA = {
    "category": "Villa",
    "image": "https://i.remax.com.tr/photos/44/1464544/L/f4c7406c1c994d27ae18dafe7b5e9238.webp",
    "photoCount": 38,
-   "url": "https://remax.com.tr/tr/portfoy/P70778343"
+   "url": "https://remax.com.tr/tr/portfoy/P70778343",
+   "displayTitle": "Akhisar Sindelli'de 11 Villa İmarlı 6.262 m² Yatırımlık Arsa",
+   "imageSmall": "media/P70778343/f4c7406c1c994d27ae18dafe7b5e9238-s.webp",
+   "imageMedium": "media/P70778343/f4c7406c1c994d27ae18dafe7b5e9238-m.webp",
+   "pageUrl": "ilan/P70778343/",
+   "typeGroup": "Konut"
   },
   {
    "code": "P42652727",
@@ -184,7 +224,12 @@ window.SITE_DATA = {
    "category": "Müstakil Ev",
    "image": "https://i.remax.com.tr/photos/45/1461245/L/9b8af5974ca84000afd6611e220d14c1.webp",
    "photoCount": 34,
-   "url": "https://remax.com.tr/tr/portfoy/P42652727"
+   "url": "https://remax.com.tr/tr/portfoy/P42652727",
+   "displayTitle": "Akhisar Mecidiye'de Satılık 488m² Bahçeli, İki Yola Cepheli Müstakil 3+1 Ev",
+   "imageSmall": "media/P42652727/9b8af5974ca84000afd6611e220d14c1-s.webp",
+   "imageMedium": "media/P42652727/9b8af5974ca84000afd6611e220d14c1-m.webp",
+   "pageUrl": "ilan/P42652727/",
+   "typeGroup": "Konut"
   },
   {
    "code": "P21314620",
@@ -201,7 +246,12 @@ window.SITE_DATA = {
    "category": "Çiftlik",
    "image": "https://i.remax.com.tr/photos/59/1454559/L/adb1b3fb2fef48eb8bdd8caf935146fa.webp",
    "photoCount": 54,
-   "url": "https://remax.com.tr/tr/portfoy/P21314620"
+   "url": "https://remax.com.tr/tr/portfoy/P21314620",
+   "displayTitle": "Manisa Gördes'de Satılık 180 Dönüm Dev Entegre Çiftlik & Ceviz Bahçesi",
+   "imageSmall": "media/P21314620/adb1b3fb2fef48eb8bdd8caf935146fa-s.webp",
+   "imageMedium": "media/P21314620/adb1b3fb2fef48eb8bdd8caf935146fa-m.webp",
+   "pageUrl": "ilan/P21314620/",
+   "typeGroup": "Çiftlik"
   },
   {
    "code": "P22284836",
@@ -218,7 +268,12 @@ window.SITE_DATA = {
    "category": "Fabrika & Üretim Tesisi",
    "image": "https://i.remax.com.tr/photos/55/1447155/L/4522669595494fa490e1bd8f64f62e53.webp",
    "photoCount": 33,
-   "url": "https://remax.com.tr/tr/portfoy/P22284836"
+   "url": "https://remax.com.tr/tr/portfoy/P22284836",
+   "displayTitle": "Kırkağaç'ta Kiralık Tam Donanımlı Zeytin İşleme Tesisi / Fabrika",
+   "imageSmall": "media/P22284836/4522669595494fa490e1bd8f64f62e53-s.webp",
+   "imageMedium": "media/P22284836/4522669595494fa490e1bd8f64f62e53-m.webp",
+   "pageUrl": "ilan/P22284836/",
+   "typeGroup": "Sanayi"
   },
   {
    "code": "P58836361",
@@ -235,7 +290,12 @@ window.SITE_DATA = {
    "category": "Fabrika & Üretim Tesisi",
    "image": "https://i.remax.com.tr/photos/13/1447113/L/0fa67c1e9e5c4506885b1b4479816c52.webp",
    "photoCount": 34,
-   "url": "https://remax.com.tr/tr/portfoy/P58836361"
+   "url": "https://remax.com.tr/tr/portfoy/P58836361",
+   "displayTitle": "Kırkağaç'ta Satılık Tam Donanımlı Zeytin İşleme Tesisi / Fabrika",
+   "imageSmall": "media/P58836361/0fa67c1e9e5c4506885b1b4479816c52-s.webp",
+   "imageMedium": "media/P58836361/0fa67c1e9e5c4506885b1b4479816c52-m.webp",
+   "pageUrl": "ilan/P58836361/",
+   "typeGroup": "Sanayi"
   },
   {
    "code": "P06241705",
@@ -252,7 +312,12 @@ window.SITE_DATA = {
    "category": "Villa",
    "image": "https://i.remax.com.tr/photos/30/1438530/L/23eda26f5d024cf4a64f46c700fffac3.webp",
    "photoCount": 53,
-   "url": "https://remax.com.tr/tr/portfoy/P06241705"
+   "url": "https://remax.com.tr/tr/portfoy/P06241705",
+   "displayTitle": "Bodrum Gümüşlük'te Satılık Ödüllü Tasarım Lüks Müstakil Villa 4+2",
+   "imageSmall": "media/P06241705/23eda26f5d024cf4a64f46c700fffac3-s.webp",
+   "imageMedium": "media/P06241705/23eda26f5d024cf4a64f46c700fffac3-m.webp",
+   "pageUrl": "ilan/P06241705/",
+   "typeGroup": "Konut"
   },
   {
    "code": "P48404550",
@@ -269,7 +334,12 @@ window.SITE_DATA = {
    "category": "Çiftlik",
    "image": "https://i.remax.com.tr/photos/83/1411883/L/e436cc3cc28b4b1583cdd238fbfe0233.webp",
    "photoCount": 36,
-   "url": "https://remax.com.tr/tr/portfoy/P48404550"
+   "url": "https://remax.com.tr/tr/portfoy/P48404550",
+   "displayTitle": "Akhisar Rahmıyede Satılık 15.108 M²tam Donanımlı Tavuk Çiftliği",
+   "imageSmall": "media/P48404550/e436cc3cc28b4b1583cdd238fbfe0233-s.webp",
+   "imageMedium": "media/P48404550/e436cc3cc28b4b1583cdd238fbfe0233-m.webp",
+   "pageUrl": "ilan/P48404550/",
+   "typeGroup": "Çiftlik"
   },
   {
    "code": "P30443432",
@@ -286,7 +356,12 @@ window.SITE_DATA = {
    "category": "Fabrika & Üretim Tesisi",
    "image": "https://i.remax.com.tr/photos/44/1404544/L/8df3cf3c8f454c0d92b2e368b9a1131a.webp",
    "photoCount": 48,
-   "url": "https://remax.com.tr/tr/portfoy/P30443432"
+   "url": "https://remax.com.tr/tr/portfoy/P30443432",
+   "displayTitle": "Akhisar Organize Sanayi Bölgesinde 18159 m² Satılık Fabrika",
+   "imageSmall": "media/P30443432/8df3cf3c8f454c0d92b2e368b9a1131a-s.webp",
+   "imageMedium": "media/P30443432/8df3cf3c8f454c0d92b2e368b9a1131a-m.webp",
+   "pageUrl": "ilan/P30443432/",
+   "typeGroup": "Sanayi"
   },
   {
    "code": "P23871028",
@@ -303,7 +378,12 @@ window.SITE_DATA = {
    "category": "Fabrika & Üretim Tesisi",
    "image": "https://i.remax.com.tr/photos/25/1391625/L/d0a6d7ef6c844edf80e89842649ede3c.webp",
    "photoCount": 44,
-   "url": "https://remax.com.tr/tr/portfoy/P23871028"
+   "url": "https://remax.com.tr/tr/portfoy/P23871028",
+   "displayTitle": "Akhisar OSB’de 76.000 m² Arsa Üzerinde 19.000 m² Kapalı Kiralık Fabrika",
+   "imageSmall": "media/P23871028/d0a6d7ef6c844edf80e89842649ede3c-s.webp",
+   "imageMedium": "media/P23871028/d0a6d7ef6c844edf80e89842649ede3c-m.webp",
+   "pageUrl": "ilan/P23871028/",
+   "typeGroup": "Sanayi"
   },
   {
    "code": "P81473370",
@@ -320,7 +400,12 @@ window.SITE_DATA = {
    "category": "Çiftlik",
    "image": "https://i.remax.com.tr/photos/33/1375333/L/cc22c561064c41e48f314f2da7abe872.webp",
    "photoCount": 30,
-   "url": "https://remax.com.tr/tr/portfoy/P81473370"
+   "url": "https://remax.com.tr/tr/portfoy/P81473370",
+   "displayTitle": "Akhisar’da Satılık 96.000 Kapasiteli Faal Tavuk Çiftliği 18.419 m² Arsa",
+   "imageSmall": "media/P81473370/cc22c561064c41e48f314f2da7abe872-s.webp",
+   "imageMedium": "media/P81473370/cc22c561064c41e48f314f2da7abe872-m.webp",
+   "pageUrl": "ilan/P81473370/",
+   "typeGroup": "Çiftlik"
   },
   {
    "code": "P13630034",
@@ -337,7 +422,12 @@ window.SITE_DATA = {
    "category": "Fabrika & Üretim Tesisi",
    "image": "https://i.remax.com.tr/photos/59/1319859/L/76c519e6ca034948a7e97c2546a8455c.webp",
    "photoCount": 45,
-   "url": "https://remax.com.tr/tr/portfoy/P13630034"
+   "url": "https://remax.com.tr/tr/portfoy/P13630034",
+   "displayTitle": "Akhisar Organize Sanayi Bölgesi’nde 18.159 m² Kiralık Fabrika",
+   "imageSmall": "media/P13630034/76c519e6ca034948a7e97c2546a8455c-s.webp",
+   "imageMedium": "media/P13630034/76c519e6ca034948a7e97c2546a8455c-m.webp",
+   "pageUrl": "ilan/P13630034/",
+   "typeGroup": "Sanayi"
   },
   {
    "code": "P31113373",
@@ -354,7 +444,12 @@ window.SITE_DATA = {
    "category": "Fabrika & Üretim Tesisi",
    "image": "https://i.remax.com.tr/photos/57/1273357/L/dbc4e885223e4bcf8f85723c7dc3ad1b.webp",
    "photoCount": 49,
-   "url": "https://remax.com.tr/tr/portfoy/P31113373"
+   "url": "https://remax.com.tr/tr/portfoy/P31113373",
+   "displayTitle": "Manisa Orta Ölçekli Sanayi Bölgesi’nde 1870 m² Kapalı Kiralık Fabrika",
+   "imageSmall": "media/P31113373/dbc4e885223e4bcf8f85723c7dc3ad1b-s.webp",
+   "imageMedium": "media/P31113373/dbc4e885223e4bcf8f85723c7dc3ad1b-m.webp",
+   "pageUrl": "ilan/P31113373/",
+   "typeGroup": "Sanayi"
   }
  ],
  "reviews": [

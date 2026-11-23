@@ -2,6 +2,7 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://i.remax.com.tr; frame-src https://www.openstreetmap.org https://player.vimeo.com; script-src 'self'; style-src 'self'; font-src 'self'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Adil Dinç | Gayrimenkul Danışmanı | Manisa, Akhisar, İzmir</title>
 <meta name="description" content="RE/MAX Kuvars gayrimenkul danışmanı Adil Dinç. Akhisar OSB fabrika, sanayi arsası, çiftlik ve konut alım-satım-kiralama. Manisa ve İzmir'de 10 yıllık tecrübe.">
@@ -9,9 +10,11 @@
 <meta property="og:description" content="Akhisar OSB'den İzmir'e fabrika, arsa, çiftlik ve konut portföyü.">
 <meta property="og:image" content="https://i.remax.com.tr/photos/employee/13/9a48809da5f546df9d2cbe6605f93c73.jpg">
 <meta property="og:type" content="profile">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#f6f4ef">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -22,259 +25,16 @@
   "telephone": "+90 538 891 91 11",
   "email": "adildinc@remaxkuvars.com",
   "worksFor": {"@type": "RealEstateAgent", "name": "RE/MAX Kuvars", "telephone": "+90 232 362 19 19"},
-  "address": {"@type": "PostalAddress", "streetAddress": "Caher Dudayev Bulvarı, Condominium No 9/2A, Ataşehir Mah.", "addressLocality": "Çiğli", "addressRegion": "İzmir", "addressCountry": "TR"},
+  "address": {"@type": "PostalAddress", "streetAddress": "Caher Dudayev Bulvarı, Condominium No 9/2a, Ataşehir Mah.", "addressLocality": "Çiğli", "addressRegion": "İzmir", "addressCountry": "TR"},
   "areaServed": ["Akhisar", "Manisa", "İzmir"],
-  "aggregateRating": {"@type": "AggregateRating", "ratingValue": 5, "reviewCount": 36, "bestRating": 5},
   "sameAs": ["https://remax.com.tr/tr/danisman/15913-952/adil-dinc", "https://www.instagram.com/remax.adildinc/"]
 }
 </script>
-<style>
-:root {
-  --paper: #f6f4ef;
-  --surface: #ffffff;
-  --surface-muted: #eeebe4;
-  --ink: #13243a;
-  --ink-soft: #4b5a6c;
-  --line: rgba(19, 36, 58, 0.12);
-  --navy: #003d79;
-  --accent: #d8202f;
-  --accent-ink: #ffffff;
-  --whatsapp: #128c4a;
-  --shadow: 0 1px 2px rgba(19, 36, 58, 0.06), 0 8px 24px -12px rgba(19, 36, 58, 0.18);
-  --radius: 18px;
-  --ease: cubic-bezier(0.32, 0.72, 0, 1);
-  color-scheme: light;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --paper: #0d141c;
-    --surface: #142030;
-    --surface-muted: #1a2738;
-    --ink: #e9edf2;
-    --ink-soft: #a3b0bf;
-    --line: rgba(233, 237, 242, 0.12);
-    --navy: #7fb2ec;
-    --accent: #ff5a66;
-    --whatsapp: #2fbf6c;
-    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px -12px rgba(0, 0, 0, 0.6);
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --paper: #0d141c;
-  --surface: #142030;
-  --surface-muted: #1a2738;
-  --ink: #e9edf2;
-  --ink-soft: #a3b0bf;
-  --line: rgba(233, 237, 242, 0.12);
-  --navy: #7fb2ec;
-  --accent: #ff5a66;
-  --whatsapp: #2fbf6c;
-  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px -12px rgba(0, 0, 0, 0.6);
-  color-scheme: dark;
-}
-
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 84px; }
-body {
-  margin: 0;
-  background: var(--paper);
-  color: var(--ink);
-  font: 400 16px/1.6 "Manrope", system-ui, sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
-img { max-width: 100%; display: block; }
-a { color: inherit; }
-h1, h2, h3 { font-family: "Fraunces", Georgia, serif; font-weight: 600; line-height: 1.15; margin: 0; letter-spacing: -0.01em; }
-h2 { font-size: clamp(1.7rem, 3.2vw, 2.4rem); }
-.wrap { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
-@media (min-width: 720px) { .wrap { padding: 0 32px; } }
-section { padding: 72px 0; }
-@media (min-width: 900px) { section { padding: 104px 0; } }
-.lead { color: var(--ink-soft); font-size: 1.05rem; max-width: 60ch; }
-
-/* nav */
-.nav {
-  position: sticky; top: 0; z-index: 20;
-  background: color-mix(in srgb, var(--paper) 82%, transparent);
-  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--line);
-}
-.nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 68px; gap: 16px; }
-.brand { text-decoration: none; display: flex; flex-direction: column; line-height: 1.15; }
-.brand strong { font-family: "Fraunces", serif; font-size: 1.2rem; font-weight: 600; }
-.brand span { font-size: 0.78rem; color: var(--ink-soft); }
-.nav-links { display: none; gap: 28px; font-weight: 500; font-size: 0.95rem; }
-.nav-links a { text-decoration: none; color: var(--ink-soft); transition: color 200ms var(--ease); }
-.nav-links a:hover { color: var(--ink); }
-@media (min-width: 860px) { .nav-links { display: flex; } }
-
-/* buttons */
-.btn {
-  display: inline-flex; align-items: center; gap: 10px;
-  padding: 12px 14px 12px 22px; border-radius: 999px;
-  font-weight: 600; font-size: 0.95rem; text-decoration: none; border: 0; cursor: pointer;
-  transition: transform 300ms var(--ease), background-color 300ms var(--ease);
-}
-.btn:active { transform: scale(0.98); }
-.btn .icon {
-  width: 30px; height: 30px; border-radius: 999px; display: grid; place-items: center;
-  background: rgba(255, 255, 255, 0.18);
-  transition: transform 300ms var(--ease);
-}
-.btn:hover .icon { transform: translate(2px, -1px) scale(1.05); }
-.btn-wa { background: var(--whatsapp); color: #fff; }
-.btn-dark { background: var(--ink); color: var(--paper); }
-.btn-dark .icon { background: color-mix(in srgb, var(--paper) 18%, transparent); }
-.btn-ghost { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px var(--line); padding: 12px 22px; }
-.btn svg { width: 16px; height: 16px; }
-.btn-sm { padding: 8px 10px 8px 16px; font-size: 0.88rem; }
-.btn-sm .icon { width: 24px; height: 24px; }
-
-/* hero */
-.hero { padding-top: 48px; }
-.hero-grid { display: grid; gap: 40px; align-items: center; }
-@media (min-width: 900px) { .hero-grid { grid-template-columns: 1.15fr 0.85fr; gap: 72px; } .hero { padding-top: 80px; } }
-.hero h1 { font-size: clamp(2.5rem, 6vw, 4.4rem); margin: 18px 0 20px; }
-.hero h1 em { font-style: normal; color: var(--accent); }
-.badge-line { display: inline-flex; align-items: center; gap: 10px; font-size: 0.9rem; color: var(--ink-soft); font-weight: 500; }
-.badge-line img { height: 26px; width: auto; border-radius: 4px; }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
-.portrait-shell {
-  padding: 8px; border-radius: 30px; background: var(--surface-muted); box-shadow: inset 0 0 0 1px var(--line);
-  max-width: 420px; justify-self: center; width: 100%;
-}
-.portrait-core { border-radius: 22px; overflow: hidden; background: var(--surface); position: relative; }
-.portrait-core img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 20%; }
-.portrait-caption { padding: 16px 20px 18px; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
-.portrait-caption b { display: block; font-size: 1rem; }
-.portrait-caption small { color: var(--ink-soft); }
-.rating { text-align: right; white-space: nowrap; }
-.rating strong { font-family: "Fraunces", serif; font-size: 1.6rem; }
-.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 44px; background: var(--line); border-radius: 16px; overflow: hidden; border: 1px solid var(--line); }
-.stats div { background: var(--surface); padding: 18px 16px; }
-.stats strong { display: block; font-family: "Fraunces", serif; font-size: 1.7rem; font-weight: 600; }
-.stats span { font-size: 0.85rem; color: var(--ink-soft); }
-
-/* expertise */
-.expertise { background: var(--surface); border-block: 1px solid var(--line); }
-.exp-grid { display: grid; gap: 40px; }
-@media (min-width: 900px) { .exp-grid { grid-template-columns: 0.9fr 1.1fr; gap: 72px; align-items: start; } }
-.exp-list { display: grid; gap: 0; }
-.exp-item { display: grid; grid-template-columns: 44px 1fr; gap: 16px; padding: 22px 0; border-bottom: 1px solid var(--line); }
-.exp-item:last-child { border-bottom: 0; }
-.exp-item svg { width: 28px; height: 28px; color: var(--navy); margin-top: 2px; }
-.exp-item h3 { font-size: 1.2rem; margin-bottom: 4px; }
-.exp-item p { margin: 0; color: var(--ink-soft); }
-
-/* listings */
-.listings-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 20px; margin-bottom: 28px; }
-.filters { display: flex; flex-wrap: wrap; gap: 8px; }
-.chip {
-  border: 0; background: var(--surface); color: var(--ink-soft); box-shadow: inset 0 0 0 1px var(--line);
-  padding: 8px 16px; border-radius: 999px; font: 500 0.9rem "Manrope", sans-serif; cursor: pointer;
-  transition: background-color 200ms var(--ease), color 200ms var(--ease);
-}
-.chip[aria-pressed="true"] { background: var(--ink); color: var(--paper); box-shadow: none; }
-.filter-row { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; margin-bottom: 28px; }
-.filter-row .sep { width: 1px; height: 24px; background: var(--line); }
-.grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
-.card {
-  background: var(--surface); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow);
-  display: flex; flex-direction: column; transition: transform 400ms var(--ease);
-}
-.card:hover { transform: translateY(-3px); }
-.card-media { position: relative; display: block; aspect-ratio: 4 / 3; background: var(--surface-muted); overflow: hidden; }
-.card-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 700ms var(--ease); }
-.card:hover .card-media img { transform: scale(1.04); }
-.card-body { padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
-.card-op { font-size: 0.8rem; font-weight: 700; color: var(--accent); }
-.card-op.rent { color: var(--navy); }
-.card h3 { font-family: "Manrope", sans-serif; font-size: 1.02rem; font-weight: 600; line-height: 1.4; }
-.card h3 a { text-decoration: none; }
-.card-loc { color: var(--ink-soft); font-size: 0.9rem; }
-.card-meta { display: flex; gap: 16px; font-size: 0.88rem; color: var(--ink-soft); }
-.card-foot { margin-top: auto; padding-top: 12px; border-top: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-.price { font-family: "Fraunces", serif; font-size: 1.3rem; font-weight: 600; }
-.price small { font-family: "Manrope", sans-serif; font-size: 0.8rem; color: var(--ink-soft); font-weight: 500; }
-.price s { display: block; font-family: "Manrope", sans-serif; font-size: 0.8rem; color: var(--ink-soft); font-weight: 500; }
-.wa-mini { width: 40px; height: 40px; border-radius: 999px; display: grid; place-items: center; background: color-mix(in srgb, var(--whatsapp) 14%, transparent); color: var(--whatsapp); flex-shrink: 0; }
-.wa-mini svg { width: 20px; height: 20px; }
-.empty { padding: 40px; text-align: center; color: var(--ink-soft); background: var(--surface); border-radius: var(--radius); }
-.sync-note { margin-top: 20px; font-size: 0.85rem; color: var(--ink-soft); }
-
-/* about */
-.about-grid { display: grid; gap: 40px; }
-@media (min-width: 900px) { .about-grid { grid-template-columns: 1.2fr 0.8fr; gap: 72px; } }
-.about-text p { margin: 0 0 16px; }
-.timeline { list-style: none; margin: 28px 0 0; padding: 0; display: grid; gap: 0; }
-.timeline li { display: grid; grid-template-columns: 96px 1fr; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--line); }
-.timeline li span:first-child { font-weight: 700; color: var(--navy); }
-.side-card { background: var(--surface); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); }
-.side-card h3 { font-size: 1.25rem; margin-bottom: 14px; }
-.side-card ul { margin: 0; padding-left: 18px; color: var(--ink-soft); font-size: 0.93rem; }
-.side-card li { margin-bottom: 6px; }
-details summary { cursor: pointer; font-weight: 600; margin-top: 16px; color: var(--navy); }
-.license { margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 0.9rem; }
-.license b { display: block; }
-
-/* calculator */
-.calc { --paper: #f4f6f9; background: #102844; color: var(--paper); box-shadow: inset 0 0 0 1px var(--line); border-radius: 28px; padding: 36px 24px; display: grid; gap: 32px; }
-@media (min-width: 900px) { .calc { grid-template-columns: 1fr 1fr; padding: 56px; gap: 56px; } }
-.calc h2 { color: var(--paper); }
-.calc p { color: color-mix(in srgb, var(--paper) 70%, transparent); }
-.calc-form { display: grid; gap: 16px; }
-.calc label { display: grid; gap: 6px; font-size: 0.88rem; font-weight: 500; }
-.calc input {
-  background: color-mix(in srgb, var(--paper) 8%, transparent); color: var(--paper);
-  border: 1px solid color-mix(in srgb, var(--paper) 22%, transparent); border-radius: 12px;
-  padding: 12px 14px; font: 600 1rem "Manrope", sans-serif; width: 100%;
-}
-.calc input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
-.calc-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-.calc-result { border-top: 1px solid color-mix(in srgb, var(--paper) 20%, transparent); padding-top: 18px; }
-.calc-result strong { display: block; font-family: "Fraunces", serif; font-size: 2.4rem; }
-.calc-result small { color: color-mix(in srgb, var(--paper) 65%, transparent); }
-
-/* reviews */
-.reviews-grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); margin-top: 36px; }
-.review { background: var(--surface); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 14px; }
-.review p { margin: 0; }
-.review footer { margin-top: auto; display: flex; justify-content: space-between; font-size: 0.88rem; color: var(--ink-soft); }
-.review footer b { color: var(--ink); }
-.stars { color: #e0a100; letter-spacing: 2px; font-size: 0.95rem; }
-
-/* contact */
-.contact { background: var(--surface); border-top: 1px solid var(--line); }
-.contact-grid { display: grid; gap: 40px; }
-@media (min-width: 900px) { .contact-grid { grid-template-columns: 1fr 1fr; gap: 72px; } }
-.contact-list { display: grid; gap: 0; }
-.contact-list a, .contact-list div { display: grid; grid-template-columns: 120px 1fr; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--line); text-decoration: none; }
-.contact-list span { color: var(--ink-soft); font-size: 0.9rem; }
-.contact-list b { font-weight: 600; }
-.contact-list a:hover b { color: var(--navy); }
-
-footer.site { padding: 36px 0 96px; font-size: 0.85rem; color: var(--ink-soft); }
-footer.site .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; }
-@media (min-width: 720px) { footer.site { padding-bottom: 36px; } }
-
-/* mobile sticky action bar */
-.mobile-bar {
-  position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 30; display: grid; grid-template-columns: 1fr 1fr; gap: 8px;
-  padding: 8px; border-radius: 999px; background: color-mix(in srgb, var(--surface) 88%, transparent);
-  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); box-shadow: var(--shadow); border: 1px solid var(--line);
-}
-.mobile-bar .btn { justify-content: center; padding: 12px; }
-@media (min-width: 720px) { .mobile-bar { display: none; } }
-
-.reveal { opacity: 0; transform: translateY(16px); transition: opacity 700ms var(--ease), transform 700ms var(--ease); }
-.reveal.in { opacity: 1; transform: none; }
-@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } }
-</style>
 </head>
-<body>
+<body id="top">
+<a class="skip-link" href="#main">İçeriğe geç</a>
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<svg class="sprite" aria-hidden="true" focusable="false">
   <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.86 9.86 0 0 0 12.04 2Zm5.8 14.09c-.24.68-1.42 1.3-1.95 1.35-.5.05-.97.23-3.27-.68-2.77-1.09-4.52-3.92-4.66-4.1-.13-.18-1.11-1.48-1.11-2.82s.7-2 .96-2.27c.25-.27.54-.34.72-.34l.52.01c.17 0 .39-.06.61.47.24.56.79 1.94.86 2.08.07.13.11.3.02.48-.09.18-.13.29-.27.45-.13.16-.28.35-.4.47-.13.13-.27.28-.12.55.16.27.7 1.15 1.5 1.86 1.03.92 1.9 1.2 2.17 1.34.27.13.43.11.58-.07.16-.18.67-.78.85-1.05.18-.27.36-.22.61-.13.25.09 1.6.75 1.87.89.27.13.45.2.52.31.07.11.07.65-.17 1.3Z"/></symbol>
   <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></symbol>
   <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9"/></symbol>
@@ -283,52 +43,53 @@ footer.site .wrap { display: flex; flex-wrap: wrap; justify-content: space-betwe
 <header class="nav">
   <div class="wrap">
     <a class="brand" href="#top"><strong>Adil Dinç</strong><span>RE/MAX Kuvars</span></a>
-    <nav class="nav-links" aria-label="Ana menü">
-      <a href="#ilanlar">İlanlar</a>
+    <nav class="nav-links" id="site-menu" aria-label="Ana menü">
+      <a href="ilan/">Portföy</a>
       <a href="#uzmanlik">Uzmanlık</a>
       <a href="#hakkimda">Hakkımda</a>
+      <a href="#degerleme">Değerleme</a>
       <a href="#kredi">Kredi Hesaplama</a>
-      <a href="#yorumlar">Yorumlar</a>
       <a href="#iletisim">İletişim</a>
     </nav>
-    <a class="btn btn-dark btn-sm" href="tel:+905388919111">Hemen Ara <span class="icon"><svg><use href="#i-phone"/></svg></span></a>
+    <a class="btn btn-dark btn-sm nav-call" href="tel:+905388919111" data-agent-link="phone"><span class="label">Hemen Ara</span> <span class="icon" aria-hidden="true"><svg><use href="#i-phone"/></svg></span></a>
+    <button class="nav-toggle" type="button" aria-controls="site-menu" aria-expanded="false" aria-label="Menü"><span class="nav-toggle-lines" aria-hidden="true"><span></span></span></button>
   </div>
 </header>
 
-<main id="top">
+<main id="main" tabindex="-1">
   <section class="hero">
     <div class="wrap hero-grid">
-      <div class="reveal">
+      <div>
         <div class="badge-line">Gayrimenkul Danışmanı, RE/MAX Kuvars</div>
         <h1>Gayrimenkulde <em>adil</em> çözüm.</h1>
         <p class="lead">Akhisar OSB'deki fabrikalardan Manisa'daki çiftliklere, İzmir'deki konutlara kadar alım, satım ve kiralama süreçlerinizi baştan sona yürütüyorum. Size yalnızca imza atmak kalıyor.</p>
         <div class="hero-actions">
-          <a class="btn btn-wa" id="hero-wa" href="https://wa.me/905388919111" target="_blank" rel="noopener">WhatsApp'tan Yazın <span class="icon"><svg><use href="#i-wa"/></svg></span></a>
+          <a class="btn btn-wa" href="https://wa.me/905388919111" target="_blank" rel="noopener" data-agent-link="whatsapp">WhatsApp'tan Yazın <span class="icon" aria-hidden="true"><svg><use href="#i-wa"/></svg></span></a>
           <a class="btn btn-ghost" href="#ilanlar">Portföyü İncele</a>
         </div>
         <div class="stats">
-          <div><strong>10 yıl</strong><span>RE/MAX tecrübesi</span></div>
+          <div><strong id="stat-years">10 yıl</strong><span>RE/MAX tecrübesi</span></div>
           <div><strong id="stat-listings">19</strong><span>aktif ilan</span></div>
-          <div><strong>5,0</strong><span>36 müşteri yorumu</span></div>
+          <div><strong id="stat-rating">5,0</strong><span id="stat-reviews">36 müşteri yorumu</span></div>
         </div>
       </div>
-      <div class="portrait-shell reveal">
+      <div class="portrait-shell">
         <div class="portrait-core">
-          <img src="https://i.remax.com.tr/photos/employee/13/9a48809da5f546df9d2cbe6605f93c73.jpg" alt="Adil Dinç portre fotoğrafı" width="420" height="525">
+          <img src="https://i.remax.com.tr/photos/employee/13/9a48809da5f546df9d2cbe6605f93c73.jpg" alt="Adil Dinç portre fotoğrafı" width="420" height="525" fetchpriority="high">
           <div class="portrait-caption">
             <div><b>Adil Dinç</b><small>Yetki Belgesi No: 3505441-006</small></div>
-            <div class="rating"><strong>5,0</strong><br><span class="stars" aria-label="5 üzerinden 5 yıldız">★★★★★</span></div>
+            <div class="rating"><strong>5,0</strong><span class="stars" role="img" aria-label="5 üzerinden 5 yıldız">★★★★★</span></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="ilanlar">
+  <section id="ilanlar" aria-labelledby="ilanlar-title">
     <div class="wrap">
       <div class="listings-head">
         <div>
-          <h2>Güncel portföy</h2>
+          <h2 id="ilanlar-title">Güncel portföy</h2>
           <p class="lead">Satılık ve kiralık tüm ilanlarım. Detaylar ve fotoğrafların tamamı için ilana tıklayın.</p>
         </div>
       </div>
@@ -336,9 +97,21 @@ footer.site .wrap { display: flex; flex-wrap: wrap; justify-content: space-betwe
         <div class="filters" role="group" aria-label="İşlem tipi" id="op-filters"></div>
         <div class="sep" aria-hidden="true"></div>
         <div class="filters" role="group" aria-label="Emlak tipi" id="type-filters"></div>
+        <label class="sort-control">Sırala
+          <select id="listing-sort">
+            <option value="recommended">Önerilen</option>
+            <option value="price-asc">Fiyat artan</option>
+            <option value="price-desc">Fiyat azalan</option>
+          </select>
+        </label>
       </div>
-      <div class="grid" id="listing-grid" aria-live="polite"></div>
-      <p class="sync-note" id="sync-note"></p>
+      <p class="results-status" id="listing-status" role="status" aria-live="polite"></p>
+      <div class="grid" id="listing-grid"></div>
+      <noscript><p class="empty">İlanları listelemek için JavaScript gerekiyor. <a class="text-link" href="ilan/">Tüm ilanlar</a> sayfasından portföyün tamamına ulaşabilirsiniz.</p></noscript>
+      <div class="listings-foot">
+        <p class="sync-note" id="sync-note"></p>
+        <a class="btn btn-ghost" href="ilan/">Portföyün tamamı</a>
+      </div>
     </div>
   </section>
 
@@ -350,37 +123,52 @@ footer.site .wrap { display: flex; flex-wrap: wrap; justify-content: space-betwe
       </div>
       <div class="exp-list reveal">
         <div class="exp-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M2 21V10l6 4V10l6 4V6l8 4v11H2Z"/><path d="M6 17h2M11 17h2M16 17h2"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M2 21V10l6 4V10l6 4V6l8 4v11H2Z"/><path d="M6 17h2M11 17h2M16 17h2"/></svg>
           <div><h3>Fabrika ve üretim tesisleri</h3><p>OSB içinde satılık ve kiralık fabrikalar; kapalı alan, trafo gücü ve ruhsat durumu net bilgilerle.</p></div>
         </div>
         <div class="exp-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 20h18"/><path d="M5 20c0-6 3-9 7-11M19 20c0-6-3-9-7-11"/><circle cx="12" cy="6" r="3"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3 20h18"/><path d="M5 20c0-6 3-9 7-11M19 20c0-6-3-9-7-11"/><circle cx="12" cy="6" r="3"/></svg>
           <div><h3>Çiftlik ve tarım arazileri</h3><p>Faal tavuk çiftlikleri, ceviz bahçeleri ve zeytin işleme tesisleri gibi gelir getiren işletmeler.</p></div>
         </div>
         <div class="exp-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M3 21V9h18v12"/><path d="M3 9l4-6h10l4 6"/><path d="M8 13h3v3H8zM13 13h3v3h-3z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M3 21V9h18v12"/><path d="M3 9l4-6h10l4 6"/><path d="M8 13h3v3H8zM13 13h3v3h-3z"/></svg>
           <div><h3>Arsa ve imarlı parseller</h3><p>Villa ve konut imarlı arsalar, liman ve otoyol bağlantılı yatırımlık araziler.</p></div>
         </div>
         <div class="exp-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>
           <div><h3>Konut, villa ve müstakil ev</h3><p>İzmir ve Manisa'da daire, villa ve bahçeli müstakil evlerde alım, satım ve kiralama.</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="hakkimda">
+  <section id="surec" aria-labelledby="surec-title">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 id="surec-title">Nasıl çalışıyorum</h2>
+        <p class="lead">Satış ya da kiralama, ilk görüşmeden tapuya kadar aynı danışmanla ilerler.</p>
+      </div>
+      <ol class="process-list reveal">
+        <li><h3>Değerleme</h3><p>Mülkü yerinde görüyor, tapu ve imar durumunu inceliyor, bölgedeki emsal ilan ve işlemlere bakarak gerçekçi bir fiyat aralığı öneriyorum.</p></li>
+        <li><h3>Pazarlama</h3><p>Fotoğrafları ve ilan metnini hazırlıyor, ilanı RE/MAX Türkiye portalında yayınlıyor, uygun alıcı ve kiracılarla doğrudan iletişime geçiyorum.</p></li>
+        <li><h3>Görüşme ve müzakere</h3><p>Gösterimleri organize ediyor, gelen teklifleri sizinle birlikte değerlendiriyor ve şartlar netleşene kadar taraflar arasındaki görüşmeleri yürütüyorum.</p></li>
+        <li><h3>Tapu devri</h3><p>Gerekli belgeleri ve tapu randevusunu hazırlıyor, devir tamamlanana kadar süreci takip ediyorum. Kiralamada sözleşme ve teslim aşamasında yanınızdayım.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="hakkimda" class="section-flush">
     <div class="wrap about-grid">
       <div class="about-text reveal">
         <h2>Hakkımda</h2>
-        <p class="lead" style="margin-top:16px">1962'de Konya'da doğdum. 1981'de katıldığım Türk Silahlı Kuvvetleri'nde Türkiye'nin birçok bölgesinde idari amirlik ve öğretmenlik yaptım, 2007'de kendi isteğimle emekli oldum.</p>
+        <p class="lead">1962'de Konya'da doğdum. 1981'de katıldığım Türk Silahlı Kuvvetleri'nde Türkiye'nin birçok bölgesinde idari amirlik ve öğretmenlik yaptım, 2007'de kendi isteğimle emekli oldum.</p>
         <ul class="timeline">
           <li><span>1981–2007</span><span>Türk Silahlı Kuvvetleri, idari amirlik ve öğretmenlik</span></li>
           <li><span>2008–2011</span><span>Ader Endüstriyel'in kurucusu, İstanbul'da endüstriyel projeler</span></li>
           <li><span>2011–2015</span><span>Tarım Kredi Kooperatifleri Tarnet A.Ş., Proje Sorumlusu</span></li>
           <li><span>2016'dan beri</span><span>RE/MAX gayrimenkul danışmanı, bugün RE/MAX Kuvars</span></li>
         </ul>
-        <p style="margin-top:24px"><b>Misyonum:</b> müşteri memnuniyeti ve istikrar. <b>Vizyonum:</b> dürüst ve başarılı olmak.</p>
+        <p class="mission"><b>Misyonum:</b> müşteri memnuniyeti ve istikrar. <b>Vizyonum:</b> dürüst ve başarılı olmak.</p>
       </div>
       <aside class="side-card reveal">
         <h3>Eğitimler ve belgeler</h3>
@@ -393,7 +181,7 @@ footer.site .wrap { display: flex; flex-wrap: wrap; justify-content: space-betwe
         </ul>
         <details>
           <summary>Tüm eğitimleri göster</summary>
-          <ul style="margin-top:10px">
+          <ul>
             <li>RE/MAX Kariyeriniz Eğitimi (2016)</li>
             <li>Dijital Pazarlama Eğitimi (2016)</li>
             <li>Power Up (2016)</li>
@@ -413,7 +201,49 @@ footer.site .wrap { display: flex; flex-wrap: wrap; justify-content: space-betwe
     </div>
   </section>
 
-  <section id="kredi" style="padding-top:0">
+  <section id="degerleme" class="section-alt" aria-labelledby="degerleme-title">
+    <div class="wrap valuation-grid">
+      <div class="reveal">
+        <h2 id="degerleme-title">Mülkünüzü değerlendirelim</h2>
+        <p class="lead">Satmayı ya da kiraya vermeyi düşündüğünüz mülkün temel bilgilerini paylaşın. Bölgedeki emsallere bakarak size bir fiyat aralığı ve izlenecek yol hakkında dönüş yapayım.</p>
+      </div>
+      <form class="valuation-form reveal" id="valuation-form">
+        <label>Emlak tipi
+          <select name="propertyType" required>
+            <option value="">Seçin</option>
+            <option>Fabrika/Sanayi</option>
+            <option>Arsa/Tarla</option>
+            <option>Çiftlik</option>
+            <option>Konut</option>
+            <option>Ticari</option>
+            <option>Diğer</option>
+          </select>
+        </label>
+        <label>İşlem
+          <select name="operation" required>
+            <option>Satış</option>
+            <option>Kiralama</option>
+          </select>
+        </label>
+        <label>İl / ilçe
+          <input name="location" type="text" autocomplete="address-level2" placeholder="Örn. Manisa / Akhisar" required>
+        </label>
+        <label>Alan (m²) <span class="optional">isteğe bağlı</span>
+          <input name="area" type="number" inputmode="numeric" min="1" step="1">
+        </label>
+        <label class="field-wide">Not <span class="optional">isteğe bağlı</span>
+          <textarea name="note" rows="4" placeholder="Ada/parsel, kapalı alan, imar durumu gibi bildiğiniz detaylar"></textarea>
+        </label>
+        <div class="form-actions">
+          <button class="btn btn-wa" type="submit">WhatsApp ile gönder <span class="icon" aria-hidden="true"><svg><use href="#i-wa"/></svg></span></button>
+          <a class="btn btn-ghost" id="valuation-mail" href="mailto:adildinc@remaxkuvars.com?subject=M%C3%BClk%20de%C4%9Ferleme%20talebi">E-posta ile gönder</a>
+        </div>
+        <p class="privacy-note">Form bilgileri sitemizde saklanmaz; yalnızca WhatsApp mesajınızı hazırlamak için kullanılır. Ayrıntılar: <a href="kvkk/">KVKK Aydınlatma Metni</a></p>
+      </form>
+    </div>
+  </section>
+
+  <section id="kredi">
     <div class="wrap">
       <div class="calc reveal">
         <div>
@@ -425,7 +255,7 @@ footer.site .wrap { display: flex; flex-wrap: wrap; justify-content: space-betwe
             <small id="calc-total"></small>
           </div>
         </div>
-        <form class="calc-form" id="calc-form" onsubmit="return false">
+        <form class="calc-form" id="calc-form">
           <label>Kredi tutarı (₺)<input id="calc-amount" inputmode="numeric" value="3.000.000"></label>
           <div class="calc-row">
             <label>Vade (ay)<input id="calc-term" inputmode="numeric" value="120"></label>
@@ -436,11 +266,12 @@ footer.site .wrap { display: flex; flex-wrap: wrap; justify-content: space-betwe
     </div>
   </section>
 
-  <section id="yorumlar" style="padding-top:0">
+  <section id="yorumlar" class="section-flush">
     <div class="wrap">
       <h2 class="reveal">Müşterilerim ne diyor?</h2>
-      <p class="lead reveal" style="margin-top:12px">RE/MAX Türkiye üzerinden bırakılan 36 değerlendirmenin ortalaması 5,0.</p>
+      <p class="lead reveal" id="reviews-summary">RE/MAX Türkiye üzerinden bırakılan 36 değerlendirmenin ortalaması 5,0.</p>
       <div class="reviews-grid" id="review-grid"></div>
+      <p class="reviews-source"><a class="text-link" href="https://remax.com.tr/tr/danisman/15913-952/adil-dinc" target="_blank" rel="noopener">Tüm değerlendirmeler RE/MAX Türkiye profilimde</a></p>
     </div>
   </section>
 
@@ -448,18 +279,18 @@ footer.site .wrap { display: flex; flex-wrap: wrap; justify-content: space-betwe
     <div class="wrap contact-grid">
       <div class="reveal">
         <h2>Gayrimenkulünüzü konuşalım</h2>
-        <p class="lead" style="margin-top:16px">Satmak, kiralamak ya da yatırım için doğru yeri bulmak istiyorsanız arayın veya WhatsApp'tan yazın. Aynı gün içinde dönüş yapıyorum.</p>
+        <p class="lead">Satmak, kiralamak ya da yatırım için doğru yeri bulmak istiyorsanız arayın veya WhatsApp'tan yazın. Aynı gün içinde dönüş yapıyorum.</p>
         <div class="hero-actions">
-          <a class="btn btn-wa" href="https://wa.me/905388919111" target="_blank" rel="noopener">WhatsApp <span class="icon"><svg><use href="#i-wa"/></svg></span></a>
-          <a class="btn btn-dark" href="tel:+905388919111">0538 891 91 11 <span class="icon"><svg><use href="#i-phone"/></svg></span></a>
+          <a class="btn btn-wa" href="https://wa.me/905388919111" target="_blank" rel="noopener" data-agent-link="whatsapp">WhatsApp <span class="icon" aria-hidden="true"><svg><use href="#i-wa"/></svg></span></a>
+          <a class="btn btn-dark" href="tel:+905388919111" data-agent-link="phone">0538 891 91 11 <span class="icon" aria-hidden="true"><svg><use href="#i-phone"/></svg></span></a>
         </div>
       </div>
       <div class="contact-list reveal">
-        <a href="tel:+905388919111"><span>Cep</span><b>0538 891 91 11</b></a>
+        <a href="tel:+905388919111" data-agent-link="phone"><span>Cep</span><b>0538 891 91 11</b></a>
         <a href="tel:+902323621919"><span>Ofis</span><b>0232 362 19 19</b></a>
         <a href="mailto:adildinc@remaxkuvars.com"><span>E-posta</span><b>adildinc@remaxkuvars.com</b></a>
         <a href="https://www.instagram.com/remax.adildinc/" target="_blank" rel="noopener"><span>Instagram</span><b>@remax.adildinc</b></a>
-        <a href="https://www.google.com/maps/search/?api=1&query=38.4776046147723,27.0675686527786" target="_blank" rel="noopener"><span>Ofis adresi</span><b>RE/MAX Kuvars, Caher Dudayev Bulvarı, Condominium No 9/2A, Ataşehir Mah., Çiğli/İzmir</b></a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=38.4776046147723,27.0675686527786" target="_blank" rel="noopener"><span>Ofis adresi</span><b>RE/MAX Kuvars, Caher Dudayev Bulvarı, Condominium No 9/2a, Ataşehir Mah., Çiğli/İzmir</b></a>
       </div>
     </div>
   </section>
@@ -467,196 +298,21 @@ footer.site .wrap { display: flex; flex-wrap: wrap; justify-content: space-betwe
 
 <footer class="site">
   <div class="wrap">
-    <span>© <span id="year"></span> Adil Dinç. Yetki Belgesi No: 3505441-006.</span>
-    <span>Her RE/MAX ofisi bağımsız olarak sahiplenilmiş ve işletilmektedir.</span>
+    <p>© <span id="year">2026</span> Adil Dinç. Taşınmaz Ticareti Yetki Belgesi No: 3505441-006, Adil Dinç Gayrimenkul Yatırım Danışmanlığı.<br>Her RE/MAX ofisi bağımsız olarak sahiplenilmiş ve işletilmektedir.</p>
+    <ul class="footer-links">
+      <li><a href="ilan/">Portföy</a></li>
+      <li><a href="kvkk/">KVKK Aydınlatma Metni</a></li>
+      <li><a href="https://remax.com.tr/tr/danisman/15913-952/adil-dinc" target="_blank" rel="noopener">RE/MAX profili</a></li>
+    </ul>
   </div>
 </footer>
 
 <div class="mobile-bar">
-  <a class="btn btn-wa" href="https://wa.me/905388919111" target="_blank" rel="noopener">WhatsApp</a>
-  <a class="btn btn-dark" href="tel:+905388919111">Ara</a>
+  <a class="btn btn-wa" href="https://wa.me/905388919111" target="_blank" rel="noopener" data-agent-link="whatsapp">WhatsApp</a>
+  <a class="btn btn-dark" href="tel:+905388919111" data-agent-link="phone">Ara</a>
 </div>
 
 <script src="data.js"></script>
-<script>
-(function () {
-  "use strict";
-
-  var WHATSAPP_NUMBER = "905388919111";
-  var ALL_FILTER = "Tümü";
-  var MONTHS_PER_YEAR = 12;
-  var PERCENT = 100;
-  // Remax titles arrive in ALL CAPS; these tokens keep a fixed spelling after title-casing.
-  var FIXED_TOKENS = { "OSB": "OSB", "KWA": "kVA", "KVA": "kVA", "GES": "GES", "M²": "m²", "M2": "m²" };
-  var APOSTROPHE_PATTERN = /^([^'’]+)(['’].*)?$/;
-  // Group RE/MAX's fine-grained categories into the few filters a visitor actually thinks in.
-  var TYPE_GROUPS = {
-    "Sanayi": ["Fabrika & Üretim Tesisi"],
-    "Çiftlik": ["Çiftlik"],
-    "Arsa": ["Konut İmarlı", "Tarla", "Ticari İmarlı", "Sanayi İmarlı"],
-    "Konut": ["Daire", "Villa", "Müstakil Ev", "Rezidans"]
-  };
-
-  var data = window.SITE_DATA || { listings: [], reviews: [] };
-  var state = { operation: ALL_FILTER, type: ALL_FILTER };
-  var priceFormatter = new Intl.NumberFormat("tr-TR");
-
-  function escapeHtml(value) {
-    return String(value == null ? "" : value).replace(/[&<>"']/g, function (ch) {
-      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch];
-    });
-  }
-
-  function toTitleCase(text) {
-    // A bare "|" renders like a capital I in Manrope, so swap it for an en dash.
-    return text.trim().replace(/\s\|\s/g, " – ").split(/\s+/).map(function (word) {
-      var parts = word.match(APOSTROPHE_PATTERN) || [word, word, ""];
-      var stem = parts[1];
-      var suffix = (parts[2] || "").toLocaleLowerCase("tr-TR");
-      var trailingDigits = stem.match(/^(\d[\d.,]*)(.*)$/);
-      var lead = trailingDigits ? trailingDigits[1] : "";
-      var core = trailingDigits ? trailingDigits[2] : stem;
-      var fixed = FIXED_TOKENS[core.toLocaleUpperCase("tr-TR")];
-      if (fixed) return lead + fixed + suffix;
-      var lower = core.toLocaleLowerCase("tr-TR");
-      return lead + lower.charAt(0).toLocaleUpperCase("tr-TR") + lower.slice(1) + suffix;
-    }).join(" ");
-  }
-
-  function typeGroupOf(category) {
-    for (var group in TYPE_GROUPS) {
-      if (TYPE_GROUPS[group].indexOf(category) !== -1) return group;
-    }
-    return "Diğer";
-  }
-
-  function formatPrice(listing) {
-    if (!listing.price) return '<span class="price">Fiyat için arayın</span>';
-    var suffix = listing.operation === "Kiralık" ? " <small>/ ay</small>" : "";
-    var old = listing.oldPrice ? "<s>" + priceFormatter.format(listing.oldPrice) + " " + escapeHtml(listing.currency) + "</s>" : "";
-    return '<span class="price">' + old + priceFormatter.format(listing.price) + " " + escapeHtml(listing.currency) + suffix + "</span>";
-  }
-
-  function whatsappLink(listing) {
-    var message = "Merhaba Adil Bey, " + listing.code + " numaralı ilanınız hakkında bilgi almak istiyorum: " + listing.url;
-    return "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message);
-  }
-
-  function renderChips(container, options, key) {
-    container.innerHTML = options.map(function (option) {
-      return '<button type="button" class="chip" data-value="' + escapeHtml(option) + '" aria-pressed="' + (state[key] === option) + '">' + escapeHtml(option) + "</button>";
-    }).join("");
-    container.onclick = function (event) {
-      var button = event.target.closest("button");
-      if (!button) return;
-      state[key] = button.getAttribute("data-value");
-      renderFilters();
-      renderListings();
-    };
-  }
-
-  function renderFilters() {
-    var operations = [ALL_FILTER].concat(unique(data.listings.map(function (l) { return l.operation; })));
-    var types = [ALL_FILTER].concat(unique(data.listings.map(function (l) { return typeGroupOf(l.category); })));
-    renderChips(document.getElementById("op-filters"), operations, "operation");
-    renderChips(document.getElementById("type-filters"), types, "type");
-  }
-
-  function unique(values) {
-    return values.filter(function (value, index) { return values.indexOf(value) === index; });
-  }
-
-  function renderListings() {
-    var grid = document.getElementById("listing-grid");
-    var visible = data.listings.filter(function (listing) {
-      var operationMatches = state.operation === ALL_FILTER || listing.operation === state.operation;
-      var typeMatches = state.type === ALL_FILTER || typeGroupOf(listing.category) === state.type;
-      return operationMatches && typeMatches;
-    });
-    if (!visible.length) {
-      grid.innerHTML = '<div class="empty">Bu filtrede ilan bulunmuyor.</div>';
-      return;
-    }
-    grid.innerHTML = visible.map(function (listing) {
-      var rooms = listing.rooms ? "<span>" + escapeHtml(listing.rooms) + "</span>" : "";
-      var title = escapeHtml(toTitleCase(listing.title));
-      return '<article class="card">' +
-        '<a class="card-media" href="' + escapeHtml(listing.url) + '" target="_blank" rel="noopener" aria-label="' + title + '">' +
-          (listing.image ? '<img loading="lazy" src="' + escapeHtml(listing.image) + '" alt="' + title + '">' : "") +
-        "</a>" +
-        '<div class="card-body">' +
-          '<span class="card-op' + (listing.operation === "Kiralık" ? " rent" : "") + '">' + escapeHtml(listing.operation) + " " + escapeHtml(listing.category) + "</span>" +
-          '<h3><a href="' + escapeHtml(listing.url) + '" target="_blank" rel="noopener">' + title + "</a></h3>" +
-          '<div class="card-loc">' + escapeHtml(listing.town) + ", " + escapeHtml(listing.city) + "</div>" +
-          '<div class="card-meta"><span>' + escapeHtml(listing.area) + " m²</span>" + rooms + "<span>" + escapeHtml(listing.photoCount) + " fotoğraf</span></div>" +
-          '<div class="card-foot">' + formatPrice(listing) +
-            '<a class="wa-mini" href="' + whatsappLink(listing) + '" target="_blank" rel="noopener" aria-label="Bu ilan için WhatsApp\'tan yaz"><svg><use href="#i-wa"/></svg></a>' +
-          "</div>" +
-        "</div>" +
-      "</article>";
-    }).join("");
-  }
-
-  function renderReviews() {
-    var grid = document.getElementById("review-grid");
-    grid.innerHTML = data.reviews.slice(0, 6).map(function (review) {
-      var stars = "★★★★★".slice(0, review.point);
-      var date = new Date(review.date).toLocaleDateString("tr-TR", { year: "numeric", month: "long" });
-      return '<article class="review reveal"><span class="stars" aria-label="' + review.point + ' yıldız">' + stars + "</span>" +
-        "<p>" + escapeHtml(review.comment) + "</p>" +
-        "<footer><b>" + escapeHtml(review.name) + "</b><span>" + escapeHtml(date) + "</span></footer></article>";
-    }).join("");
-  }
-
-  function parseLocaleNumber(raw) {
-    return parseFloat(String(raw).replace(/\./g, "").replace(",", "."));
-  }
-
-  function updateCalculator() {
-    var principal = parseLocaleNumber(document.getElementById("calc-amount").value);
-    var months = parseLocaleNumber(document.getElementById("calc-term").value);
-    var monthlyRate = parseLocaleNumber(document.getElementById("calc-rate").value) / PERCENT;
-    var paymentEl = document.getElementById("calc-payment");
-    var totalEl = document.getElementById("calc-total");
-    if (!(principal > 0) || !(months > 0) || !(monthlyRate >= 0)) {
-      paymentEl.textContent = "–";
-      totalEl.textContent = "Geçerli tutar, vade ve oran girin.";
-      return;
-    }
-    var payment = monthlyRate === 0
-      ? principal / months
-      : principal * monthlyRate / (1 - Math.pow(1 + monthlyRate, -months));
-    paymentEl.textContent = priceFormatter.format(Math.round(payment)) + " ₺";
-    totalEl.textContent = "Toplam geri ödeme: " + priceFormatter.format(Math.round(payment * months)) + " ₺ (" + Math.round(months / MONTHS_PER_YEAR * 10) / 10 + " yıl)";
-  }
-
-  function setupReveal() {
-    var targets = document.querySelectorAll(".reveal");
-    if (!("IntersectionObserver" in window)) {
-      targets.forEach(function (el) { el.classList.add("in"); });
-      return;
-    }
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) { entry.target.classList.add("in"); observer.unobserve(entry.target); }
-      });
-    }, { rootMargin: "0px 0px -10% 0px" });
-    targets.forEach(function (el) { observer.observe(el); });
-  }
-
-  document.getElementById("year").textContent = new Date().getFullYear();
-  document.getElementById("stat-listings").textContent = data.listings.length;
-  if (data.syncedAt) {
-    document.getElementById("sync-note").textContent = "İlanlar RE/MAX Türkiye'den otomatik alınır. Son güncelleme: " +
-      new Date(data.syncedAt).toLocaleString("tr-TR", { dateStyle: "long", timeStyle: "short" });
-  }
-  renderFilters();
-  renderListings();
-  renderReviews();
-  document.getElementById("calc-form").addEventListener("input", updateCalculator);
-  updateCalculator();
-  setupReveal();
-})();
-</script>
+<script src="assets/site.js" defer></script>
 </body>
 </html>
