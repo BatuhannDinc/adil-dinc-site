@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://batuhanndinc.github.io/adil-dinc-site/sitemap.xml

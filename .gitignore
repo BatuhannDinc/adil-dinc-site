@@ -1,2 +1,5 @@
 .DS_Store
 __pycache__/
+_site/
+# Listing photos are mirrored at build time and persisted via the Actions cache.
+media/
