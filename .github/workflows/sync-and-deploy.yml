@@ -1,0 +1,61 @@
+name: Sync RE/MAX listings and deploy
+
+on:
+  schedule:
+    # Every 3 hours (UTC). Off the top of the hour because GitHub delays jobs queued at :00.
+    - cron: "17 */3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: sync-and-deploy
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Pull listings from RE/MAX profile
+        run: python3 -I scripts/sync_listings.py
+
+      - name: Commit data.js if listings changed
+        run: |
+          # syncedAt changes on every run, so compare without it to avoid a commit every 3 hours.
+          if git diff --quiet -I '"syncedAt"' -- data.js; then
+            echo "No listing changes"
+            git checkout -- data.js
+          else
+            git config user.name "listing-sync-bot"
+            git config user.email "listing-sync-bot@users.noreply.github.com"
+            git add data.js
+            git commit -m "Sync listings from RE/MAX"
+            git push
+          fi
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  deploy:
+    needs: sync
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
